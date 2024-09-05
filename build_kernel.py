@@ -111,7 +111,7 @@ def main():
     
     # Print info
     print_dictinfo({
-        'TARGET_KERNEL': 'Grass',
+        'TARGET_KERNEL': 'universal9611',
         'TARGET_VARIANT': variantStr,
         'TARGET_DEVICE': args.target,
         'TARGET_INCLUDES_KSU': not args.no_ksu,
@@ -152,7 +152,7 @@ def main():
         kver = match_and_get(r'"([^"]+)"', f.read())
     
     shutil.copyfile('out/arch/arm64/boot/Image', 'AnyKernel3/Image')
-    zipname = 'GrassKernel_{}_{}_{}.zip'.format(
+    zipname = 'universal9611_{}_{}_{}.zip'.format(
         args.target, variantStr, datetime.today().strftime('%Y-%m-%d'))
     os.chdir('AnyKernel3/')
     zip_files(zipname, [

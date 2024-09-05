@@ -27,8 +27,10 @@ jobs:
           sudo apt update
           sudo apt install 
           sudo apt install bison flex libssl-dev python3
+          sudo apt install libarchive-tools
           bash toolchain_download.sh
           echo "building kernel"
+          git submodule update --init --recursive
       - name: Run build
         run: |
           python build_kernel.py --aosp --target=m31 --no-ksu --allow-dirty

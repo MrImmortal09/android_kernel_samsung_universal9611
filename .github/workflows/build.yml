@@ -3,10 +3,10 @@ name: Build kernel
 on:
   push:
     branches:
-      Grass-Unified
+      main
   pull_request:
     branches:
-      Grass-Unified
+      main
   workflow_dispatch:
 
 jobs:

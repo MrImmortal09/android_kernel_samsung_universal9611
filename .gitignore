@@ -136,3 +136,5 @@ kernel/configs/android-*.cfg
 out/
 toolchain
 toolchain/
+kali-nethunter-kernel-builder
+kali-nethunter-kernel-builder/
